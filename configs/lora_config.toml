@@ -1,0 +1,18 @@
+# Contoh dataset config. Ganti image_dir dengan folder dataset Anda,
+# atau buat otomatis:  python scripts/make_config.py --image-dir <folder>
+[general]
+enable_bucket = true
+shuffle_caption = true
+keep_tokens = 2
+caption_dropout_rate = 0.05
+
+[[datasets]]
+resolution = 512
+batch_size = 1
+enable_bucket = true
+bucket_no_upscale = true
+
+  [[datasets.subsets]]
+  image_dir = "datasets/kamasan"
+  caption_extension = ".txt"
+  num_repeats = 12

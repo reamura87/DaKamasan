@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Jupyter / Colab
+.ipynb_checkpoints/
+
+# Repo eksternal (di-clone oleh scripts/setup.sh)
+sd-scripts/
+
+# Dataset (gambar & caption tidak di-commit)
+datasets/*
+!datasets/.gitkeep
+!datasets/README.md
+
+# Hasil training & generate (file besar)
+output/*
+!output/.gitkeep
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+weights/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
